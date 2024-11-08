@@ -1,0 +1,14 @@
+model:
+  name: "DmdOneChannel"
+  params:
+    history_steps: 36
+    rank: 3
+    time_delay: 2
+validation:
+  data_path: "/bask/projects/v/vjgo8416-climate/shared/data/eumetsat/testing2022/2022_test_nonhrv.zarr"
+  wandb_project_name: "cloudcasting"
+  wandb_run_name: "DmdOneChannel-validation"
+  nan_to_num: False
+  batch_size: 2
+  num_workers: 0
+  batch_limit: 20
